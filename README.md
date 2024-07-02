@@ -19,7 +19,7 @@ As an example, the user can design a flightplan using some of the front-end modu
 
 Before starting with the installation, make sure you have the following software installed on your system:
 
-- Python 3.7
+- Python 3.7, use version 3.7.6 if you have any problem with others.
 - MongoDB Community Edition
 - MongoDB Database Tools
 - MongoDB Compass (optional, but recommended for easier database management)
@@ -43,11 +43,12 @@ In order to access the Classpip server, if the user is not in the EETAC, there's
 To run and contribute, clone this repository to your local machine and install the requirements.  
     
 To run the APIREST in localhost for simulation you must edit the run/debug configuration in PyCharm, as shown in the image, in order to pass the required arguments to the script. 
-You will need to change from Script path to Module name and input _uvicorn_, as well as adding the following parameters: _main:app --reload_.
+You will need to change from Script path to Module name and input _uvicorn_, as well as adding the following parameters: _main:app --reload --port 9000_ .
 
-![image](https://github.com/Frixon21/RestApiDEE/assets/72676967/e34bd344-ee58-4d86-b2ba-dc65c5d5c117)
+![image](https://github.com/eloimoncho/GroundAPIREST/assets/91852608/da3d3b2b-72f5-46d8-bdef-95e48b7d93c3)
 
-![image](https://github.com/Frixon21/RestApiDEE/assets/72676967/d8c9e3e4-b2a8-4df5-be1f-376d070fe58d)
+
+![image](https://github.com/eloimoncho/GroundAPIREST/assets/91852608/1563b60b-f370-416c-a66d-8f51d9655d0d)
 
 
 To restore the database you will have to run the following command from the main RestApi directory. Keep in mind that if you did not add the mongoDB Tools to your path you will have to copy them into your folder. 
